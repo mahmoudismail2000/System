@@ -1,0 +1,98 @@
+.system{
+    background-image: url('../img/pexels-igor-mashkov-6325001.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+table{
+    width: 85% !important;
+}
+input{
+    width: 100%;
+    height: 45px;
+    border: 0px;
+    box-shadow: 0px 0px 10px 0px gray inset;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0,0,0, .8);
+    font-weight: bold;
+    color: white;
+    
+    
+   
+}
+.inp{
+    width: 100%;
+    margin-top: 20px;
+}
+.salaryDetail input{
+    width: 24%;
+
+    
+}
+input:focus{
+    outline-style: dotted;
+    outline-color: blue;
+    box-shadow: 0px 0px 5px 1px blue;
+    
+}
+.salaryDetail small{
+    width: 24%;
+    background-color: brown;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.salaryDetail{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.customerDate{
+    box-shadow: 0px 0px 100px 3px rgb(0, 0, 0) inset;
+    background-color: rgba(88, 88, 88, 0.8);
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+#userTotal::before{
+    content: 'Total : ';
+    
+}
+
+.alert{
+    opacity: 0;
+    width: 480px;
+    height: 50px;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 180px;
+}
+
+
+
+
+@media all and (min-width:400px) and (max-width:1000px){
+    
+    .container{
+        width: 100% !important;
+    }
+    
+    #userTotal::before{
+        content: '';
+        
+    
+    }
+    .query{
+        display: none;
+    }
+    th{
+        font-size: 10px;
+    }
+    
+
+}
+

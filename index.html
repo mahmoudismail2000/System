@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud System</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="shortcut icon" href="img/pexels-igor-mashkov-6325001.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <section class="system pb-5" id="system">
+      
+        <h1 class="text-center text-white fw-bold mb-5 pt-5">Crud System</h1>
+      
+      <div class="container text-center w-75">
+
+        <div
+          class="customerDate d-flex flex-column align-items-center w-100 m-auto"id="customerDate">
+          <div class="inp">
+            
+            <input type="text" id="firstName" placeholder="First Name"/>
+          </div>
+          <div class="inp">
+            
+            <input type="text" id="secondName" placeholder="Last Name"/>
+          </div>
+          <div class="inp">
+            
+            <input type="email" id="userEmail" placeholder="Email"/>
+          </div>
+          <div class="inp">
+            
+            <input type="password" id="userPassword" placeholder="Password"/>
+          </div>
+          <div class="inp">
+            
+            <input type="password" id="userPassword2" placeholder="Re-Password"/>
+            <div class="alert alert-danger d-flex align-items-center ms-0 mt-2 w-100" role="alert" id="alertPassword">
+                
+            
+                <div>
+                    <i class="fa-solid fa-triangle-exclamation me-3"></i>
+                  Your Password Not Matching
+                </div>
+              </div>
+          </div>
+          <div class="salaryDetail w-100" id="salaryDetail"> 
+            <input onkeyup="countSalary()" type="number" id="userSalary" placeholder="Salary"/>
+            <input onkeyup="countSalary()" type="number" id="userProfit" placeholder="Profit"/>
+            <input onkeyup="countSalary()" type="number" id="userTaxes" placeholder="Taxes"/>
+            <small id="userTotal" class="text-start text-white d-flex align-items-center"></small>
+          </div>
+          <button class="btn bg-info my-5 fw-bold w-100 fs-5 " id="submit" onclick="dataStore()">Create</button>
+        </div>
+        <table class="table m-auto my-5 table-dark table-striped w-100">
+          <thead class="text-center">
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Second Name</th>
+              <th class="query">Email</th>
+              <th class="query">Password</th>
+              <th class="query">Re-Password</th>
+              <th class="query">Salary</th>
+              <th class="query">Profit</th>
+              <th class="query">Taxes</th>
+              <th>Total</th>
+              
+          </thead>
+          <tbody id="tableData">
+              
+  
+          </tbody>
+          
+  
+        </table>
+      </div>
+      
+      
+      
+      
+    </section>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
